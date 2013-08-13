@@ -14,12 +14,17 @@ postOrderTraverser = (visitNode) ->
       visitNode(node, path)
     ], callback
 
+isBranch = (node) ->
+  '[object Object]' == Object::toString.call(node)
+
 visitChildren = (node, path, visitBranch) -> (callback) ->
   visitorFunctions = []
 
-  for name, child of node
-    do (name, child) ->
-      visitorFunctions.push (done) -> visitBranch child, path+'/'+name, done
+  if isBranch node
+    for name, child of node
+      do (name, child) ->
+        visitorFunctions.push (done) ->
+          visitBranch child, path+'/'+name, done
 
   async.parallel visitorFunctions, callback
 

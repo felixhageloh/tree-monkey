@@ -2,10 +2,10 @@ monkey = require '../src/tree-monkey'
 
 describe 'traverse tree', ->
   tree = {
-    'a': { 'aa': {} }
+    'a': { 'aa': 42 }
     'b': {
-      'ba': {},
-      'bb': { 'bba': {} }
+      'ba': "leaf",
+      'bb': { 'bba': [] }
     }
   }
 
