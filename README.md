@@ -1,5 +1,4 @@
-Async tree traversal for nodejs
-===============================
+# Async tree traversal for nodejs #
 
 <tt>tree-monkey</tt> takes a JSON or object literal tree of the form
 
@@ -19,7 +18,7 @@ Async tree traversal for nodejs
 
 and traversers it asynchronously.
 
-## Usage
+## Usage ##
 
 The basic usage is as follows:
 
@@ -36,7 +35,7 @@ monkey.preOrder(tree, function (node, path, callback) {
 });
 ```
 
-### Pre-order traversal
+### Pre-order traversal ###
 
 Visits all nodes depth-first in async pre-order, meaning each parent node is visited before its child nodes and then all child nodes are visited asynchronously. This means all branches are visited in their own speed, so to say, and we can't know the order in which they will complete.
 
@@ -52,7 +51,7 @@ Arguments:
   <dt>callback</dt>	<dd>an optional callback, which is called after the whole tree has been traversed</dd>
 </dl>
 
-### Post-order traversal
+### Post-order traversal ###
 
 Visits all nodes depth-first in async prost-order, meaning children will be visited before their parent node. Child nodes are visited asynchronously, meaning we can't know the order in which they will complete.
 
@@ -63,8 +62,7 @@ Visits all nodes depth-first in async prost-order, meaning children will be visi
 Take the same arguments as <tt>preOrder</tt>
 
 
-License
-=======
+# License #
 
 (The MIT License)
 
