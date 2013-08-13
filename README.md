@@ -1,8 +1,6 @@
 Async tree traversal for nodejs
 ===============================
 
-***under development!***
-
 <tt>tree-monkey</tt> takes a JSON or object literal tree of the form
 
 	{
@@ -26,11 +24,11 @@ The basic usage is as follows:
 
 	var monkey = require('tree-monkey')
 	  , tree = { ... };
-	
+
 	monkey.preOrder(tree, function (node, path, callback) {
 	  // do something async with the current node and/or path
 	  ...
-	
+
 	  // signal that you are done
 	  callback();
 	});
