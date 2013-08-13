@@ -2,10 +2,12 @@
   "name": "tree-monkey",
   "version": "0.0.1",
   "description": "Async tree traversal for nodejs",
-  "main": "index.js",
+  "main": "lib/tree-monkey.js",
   "scripts": {
-    "test": "node_modules/jasmine-node/bin/jasmine-node --coffee specs/"
+    "test": "node_modules/jasmine-node/bin/jasmine-node --coffee specs/",
+    "prepublish": "node_modules/coffee-script/bin/coffee -co lib/ src/"
   },
+
   "repository": {
     "type": "git",
     "url": "https://github.com/felixhageloh/tree-monkey.git"
