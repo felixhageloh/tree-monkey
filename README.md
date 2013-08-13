@@ -24,16 +24,16 @@ and traversers it asynchronously.
 The basic usage is as follows:
 
 ```js
-	var monkey = require('tree-monkey')
-	  , tree = { ... };
+var monkey = require('tree-monkey')
+  , tree = { ... };
 
-	monkey.preOrder(tree, function (node, path, callback) {
-	  // do something async with the current node and/or path
-	  ...
+monkey.preOrder(tree, function (node, path, callback) {
+  // do something async with the current node and/or path
+  ...
 
-	  // signal that you are done
-	  callback();
-	});
+  // signal that you are done
+  callback();
+});
 ```
 
 ### Pre-order traversal
