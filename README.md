@@ -9,12 +9,12 @@ Async tree traversal for nodejs
 {
   "nodeA": {
     "nodeAA": {
-      "nodeAAA": {}
+      "nodeAAA": 'leaf'
     }
   },
   "nodeB": {
-    "nodeBA": {}
-    "nodeBB": {}
+    "nodeBA": 42
+    "nodeBB": []
   }
 }
 ```
