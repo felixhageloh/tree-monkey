@@ -47,9 +47,11 @@ Visits all nodes depth-first in async pre-order, meaning each parent node is vis
 
 Arguments:
 
-<dt><tt>tree</tt></dt>	<dd>the tree to traverse</dd>
-<dt><tt>nodeFunction</tt></dt>	<dd>the function called on each node. Receives the current node, the current path and a callback as arguments. Callback *must* be called eventually.</dd>
-<dt><tt>callback</tt></dt>	<dd>an optional callback, which is called after the whole tree has been traversed</dd>
+<dl>
+  <dt><tt>tree</tt></dt>	<dd>the tree to traverse</dd>
+  <dt><tt>nodeFunction</tt></dt>	<dd>the function called on each node. Receives the current node, the current path and a callback as arguments. Callback *must* be called eventually.</dd>
+  <dt><tt>callback</tt></dt>	<dd>an optional callback, which is called after the whole tree has been traversed</dd>
+</dl>
 
 ### Post-order traversal
 
