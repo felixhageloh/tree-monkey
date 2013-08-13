@@ -1,0 +1,32 @@
+{
+  "name": "tree-monkey",
+  "version": "0.0.1",
+  "description": "Async tree traversal for nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/jasmine-node/bin/jasmine-node --coffee specs/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felixhageloh/tree-monkey.git"
+  },
+  "keywords": [
+    "async",
+    "tree",
+    "traversal",
+    "directory",
+    "path"
+  ],
+  "author": "Felix Hageloh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felixhageloh/tree-monkey/issues"
+  },
+  "dependencies": {
+    "async": "~0.2.9"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "jasmine-node": "~1.11.0"
+  }
+}
