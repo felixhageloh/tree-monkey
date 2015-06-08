@@ -13,7 +13,7 @@
     }
   },
   "nodeB": {
-    "nodeBA": 42
+    "nodeBA": 42,
     "nodeBB": []
   }
 }
